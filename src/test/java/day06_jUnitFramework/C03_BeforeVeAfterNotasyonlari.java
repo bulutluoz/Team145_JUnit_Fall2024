@@ -113,6 +113,7 @@ public class C03_BeforeVeAfterNotasyonlari {
             System.out.println("Urun isim icerik testi PASSED");
         }else System.out.println("Urun isim icerik testi FAILED");
 
+
     }
 
 }
