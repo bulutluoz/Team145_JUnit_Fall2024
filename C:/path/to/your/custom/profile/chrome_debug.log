@@ -1,5 +1,3 @@
-[86469:259:0912/195124.393300:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.121 (not a warning)
-[86469:259:0912/195124.580083:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[86469:259:0912/195125.802820:INFO:CONSOLE(4)] "TypeError: Cannot set properties of undefined (setting 'oo_onSingleClick')", source: https://assets.bbystatic.com/analytics-dotcom/analyticsInit-f7791796aa580255fd28610903e3089e.js (4)
-[86469:259:0912/195125.811473:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/sandbox-index-21.42.20.html?parentOrigin=https%3A%2F%2Fwww.bestbuy.com&env=prod (0)
-[86469:259:0912/195128.602111:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[87415:259:0912/202041.041509:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.121 (not a warning)
+[87415:259:0912/202041.280296:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[87415:259:0912/202043.988034:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
