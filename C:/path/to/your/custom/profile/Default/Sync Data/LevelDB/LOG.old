@@ -1,2 +1,3 @@
-2024/09/11-21:12:20.054 a807 Creating DB /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Sync Data/LevelDB since it was missing.
-2024/09/11-21:12:20.075 a807 Reusing MANIFEST /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/09/12-19:22:26.026 8503 Reusing MANIFEST /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/09/12-19:22:26.027 8503 Recovering log #3
+2024/09/12-19:22:26.027 8503 Reusing old log /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Sync Data/LevelDB/000003.log 

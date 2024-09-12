@@ -1,3 +1,9 @@
-[71263:259:0911/211303.596645:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.120 (not a warning)
-[71263:259:0911/211303.963570:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[71263:259:0911/211309.288163:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[85630:259:0912/192234.886322:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.121 (not a warning)
+[85630:259:0912/192235.089701:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[85630:259:0912/192236.677571:INFO:CONSOLE(4975)] "LegacyDataMixin will be applied to all legacy elements.
+Set `_legacyUndefinedCheck: true` on element class to enable.", source: https://www.youtube.com/s/desktop/59ec15cc/jsbin/desktop_polymer.vflset/desktop_polymer.js (4975)
+[85630:259:0912/192237.923542:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[85630:259:0912/192237.923713:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[85630:259:0912/192238.645567:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[85630:259:0912/192238.645609:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[85630:259:0912/192240.724281:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

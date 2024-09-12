@@ -1,3 +1,5 @@
-2024/09/11-21:13:04.132 3e03 Reusing MANIFEST /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Local Storage/leveldb/MANIFEST-000001
-2024/09/11-21:13:04.135 3e03 Recovering log #3
-2024/09/11-21:13:04.136 3e03 Reusing old log /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Local Storage/leveldb/000003.log 
+2024/09/12-19:22:35.246 3c03 Reusing MANIFEST /Users/ahmetbulutluoz/Desktop/My Desktop/course/projeler/Team145_JUnit/C:/path/to/your/custom/profile/Default/Local Storage/leveldb/MANIFEST-000001
+2024/09/12-19:22:35.249 3c03 Recovering log #3
+2024/09/12-19:22:35.249 3c03 Level-0 table #3: started
+2024/09/12-19:22:35.256 3c03 Level-0 table #3: 26234 bytes OK
+2024/09/12-19:22:35.267 3c03 Delete type=0 #3
