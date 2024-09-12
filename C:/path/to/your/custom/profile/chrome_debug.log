@@ -1,9 +1,5 @@
-[85630:259:0912/192234.886322:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.121 (not a warning)
-[85630:259:0912/192235.089701:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[85630:259:0912/192236.677571:INFO:CONSOLE(4975)] "LegacyDataMixin will be applied to all legacy elements.
-Set `_legacyUndefinedCheck: true` on element class to enable.", source: https://www.youtube.com/s/desktop/59ec15cc/jsbin/desktop_polymer.vflset/desktop_polymer.js (4975)
-[85630:259:0912/192237.923542:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
-[85630:259:0912/192237.923713:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
-[85630:259:0912/192238.645567:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
-[85630:259:0912/192238.645609:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
-[85630:259:0912/192240.724281:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[86469:259:0912/195124.393300:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.121 (not a warning)
+[86469:259:0912/195124.580083:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[86469:259:0912/195125.802820:INFO:CONSOLE(4)] "TypeError: Cannot set properties of undefined (setting 'oo_onSingleClick')", source: https://assets.bbystatic.com/analytics-dotcom/analyticsInit-f7791796aa580255fd28610903e3089e.js (4)
+[86469:259:0912/195125.811473:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/sandbox-index-21.42.20.html?parentOrigin=https%3A%2F%2Fwww.bestbuy.com&env=prod (0)
+[86469:259:0912/195128.602111:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
