@@ -1,10 +1,14 @@
 package day07_assertions_testBaseClass;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import utilities.ReusableMethods;
 import utilities.TestBase_Each;
+
+import java.util.List;
 
 public class C07_DropdownMenu extends TestBase_Each {
 
@@ -34,8 +38,16 @@ public class C07_DropdownMenu extends TestBase_Each {
 
         //4.Tüm dropdown değerleri(value) yazdırın
 
+         List<WebElement> optionElementleriList  = select.getOptions();
 
+        System.out.println(ReusableMethods.stringListeyeCevir(optionElementleriList));
+        // [Please select an option, Option 1, Option 2]
 
         //5. Dropdown’un boyutunun 4 olduğunu test edin
+
+        int expectedDropdownBoyutu = 4;
+        int actualDropdownBoyutu = optionElementleriList.size();
+
+        Assertions.assertEquals(expectedDropdownBoyutu,actualDropdownBoyutu);
     }
 }
