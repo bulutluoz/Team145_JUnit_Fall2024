@@ -62,10 +62,36 @@ public class C02_JsAlerts extends TestBase_All {
     public void test03(){
         //3.Test
         //	- https://testotomasyonu.com/javascriptAlert adresine gidin
+        driver.get("https://testotomasyonu.com/javascriptAlert");
+        ReusableMethods.bekle(1);
         //	- 3.alert'e tiklayalim
-        //	- Cikan prompt ekranina "Abdullah" yazdiralim
+        driver.findElement(By.xpath("//*[text()='Click for JS Prompt']"))
+                .click();
+        ReusableMethods.bekle(1);
+        //	- Cikan prompt ekranina "Furkan" yazdiralim
+        driver.switchTo()
+                .alert()
+                .sendKeys("Furkan");
+        ReusableMethods.bekle(1);
         //	- OK tusuna basarak alert'i kapatalim
-        //	- Cikan sonuc yazisinin Abdullah icerdigini test edelim
+        driver.switchTo()
+                .alert()
+                .accept();
+
+        ReusableMethods.bekle(1);
+        //	- Cikan sonuc yazisinin Furkan icerdigini test edelim
+
+        String expectedSonucYaziIcerigi = "Furkan";
+
+        WebElement sonucYaziElementi = driver.findElement(By.id("result"));
+
+        String actualSonucYazisi = sonucYaziElementi.getText();
+
+        Assertions.assertTrue(actualSonucYazisi.contains(expectedSonucYaziIcerigi));
+
+
     }
+
+
 
 }
