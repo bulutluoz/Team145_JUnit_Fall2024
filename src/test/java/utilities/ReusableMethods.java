@@ -1,9 +1,11 @@
 package utilities;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class ReusableMethods {
 
@@ -31,5 +33,19 @@ public class ReusableMethods {
 
         }
 
+    }
+
+    public static void switchToWindow(WebDriver driver , String istenenSayfaTitle){
+        Set<String> acikOlanWindowlarinWHDSeti = driver.getWindowHandles();
+        for (String eachWhd : acikOlanWindowlarinWHDSeti){
+
+            driver.switchTo().window(eachWhd);
+            ReusableMethods.bekle(1);
+
+            if (driver.getTitle().equals(istenenSayfaTitle)){
+                break;
+            }
+
+        }
     }
 }
