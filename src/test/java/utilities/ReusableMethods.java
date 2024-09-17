@@ -35,7 +35,7 @@ public class ReusableMethods {
 
     }
 
-    public static void switchToWindow(WebDriver driver , String istenenSayfaTitle){
+    public static void switchToWindowByTitle(WebDriver driver , String istenenSayfaTitle){
         Set<String> acikOlanWindowlarinWHDSeti = driver.getWindowHandles();
         for (String eachWhd : acikOlanWindowlarinWHDSeti){
 
@@ -43,6 +43,20 @@ public class ReusableMethods {
             ReusableMethods.bekle(1);
 
             if (driver.getTitle().equals(istenenSayfaTitle)){
+                break;
+            }
+
+        }
+    }
+
+    public static void switchToWindowByUrl(WebDriver driver , String istenenSayfaUrl){
+        Set<String> acikOlanWindowlarinWHDSeti = driver.getWindowHandles();
+        for (String eachWhd : acikOlanWindowlarinWHDSeti){
+
+            driver.switchTo().window(eachWhd);
+            ReusableMethods.bekle(1);
+
+            if (driver.getCurrentUrl().equals(istenenSayfaUrl)){
                 break;
             }
 

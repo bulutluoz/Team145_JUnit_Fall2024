@@ -35,7 +35,7 @@ public class C05_KontrolsuzAcilanWindow extends TestBase_Each {
         //● Acilan yeni window'un sayfa başlığının (title) “New Window” oldugunu test edin
 
         // Yeni window'da test yapabilmek icin, once driver'i yeni window'a gecirelim
-        ReusableMethods.switchToWindow(driver,"New Window");
+        ReusableMethods.switchToWindowByTitle(driver,"New Window");
 
         String expectedYeniSayfaTitle = "New Window";
         String actualYeniSayfaTitle = driver.getTitle();
@@ -53,7 +53,7 @@ public class C05_KontrolsuzAcilanWindow extends TestBase_Each {
         //● Bir önceki pencereye geri döndükten sonra
         //  sayfa başlığının “The Internet” olduğunu test edin
 
-        ReusableMethods.switchToWindow(driver,"The Internet");
+        ReusableMethods.switchToWindowByTitle(driver,"The Internet");
 
         expectedTitle = "The Internet";
         actualTitle = driver.getTitle();
