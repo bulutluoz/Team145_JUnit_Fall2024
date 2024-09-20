@@ -82,8 +82,16 @@ public class C06_ExplicitlyWait {
                 .click();
 
         //5. It’s back mesajinin gorundugunu test edin
+        //   It's Back elementi gorunur olmadigindan, locate edemiyoruz
+        //   bu durumda explicit wait'deki 2. ve 3.adimlari
+        //   yani locate ve beklemeyi birlikte yapabiliriz
 
-        WebElement itsBackElementi = driver.findElement(By.id("message"));
+
+        WebElement itsBackElementi =
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"It's back!\"]")));
+        //driver.findElement(By.id("message"));
+
+
 
         Assertions.assertTrue(itsBackElementi.isDisplayed());
 
