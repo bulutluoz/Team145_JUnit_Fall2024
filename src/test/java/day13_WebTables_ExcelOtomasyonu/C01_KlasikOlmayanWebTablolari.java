@@ -91,8 +91,21 @@ public class C01_KlasikOlmayanWebTablolari extends TestBase_Each {
             }
         }
 
-        //10. Bir method olusturun, Test sayfasindan satir ve sutun verildiginde datayi yazdirsin
+        //10. Bir method olusturun, Test method'undan satir ve sutun verildiginde datayi yazdirsin
 
+        datayiyazdir(2,1); // Medium 25 L Laptop Backpack
+        datayiyazdir(3,3); // $399.00
+
+    }
+
+    public void datayiyazdir(int satirNo, int sutunNo){
+
+        String  dinamikXpath = "//*[@role='trow'][" + satirNo + "] / *[@role='tdata']["+sutunNo+"]";
+
+        WebElement istenenDataElementi = driver.findElement(By.xpath(dinamikXpath));
+
+
+        System.out.println("Istenen satir ve sutundaki data : " + istenenDataElementi.getText());
 
     }
 }
