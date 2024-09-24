@@ -1,10 +1,7 @@
 package utilities;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -131,5 +128,37 @@ public class ReusableMethods {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void getScreenshotWebElement(WebDriver driver, WebElement webElement){
+
+        LocalDateTime ldt = LocalDateTime.now(); // 2024-09-24T20-23-24-123432
+
+        DateTimeFormatter istenenFormat = DateTimeFormatter.ofPattern("yyMMddHHmmss");
+        String tarihEtiketi = ldt.format(istenenFormat);
+
+        // 1.adim olusturacagimiz dosyayolunu hazirlayalim
+        String dosyaYolu = "target/screenshots/WebElementSS"+tarihEtiketi+".png";
+
+        // 2- kullanacagimiz WebElementi locate edip, WebElement olarak kaydedin
+        //    parametre olarak gonderilen webElement'in ss alinacak
+
+        // 3- kaydedecegimiz file'i olusturun
+
+        File webElementSS = new File(dosyaYolu);
+
+        // 4- webElement uzerinden screenshot'i alip, gecici dosya olarak kaydedin
+
+        File geciciDosya = webElement.getScreenshotAs(OutputType.FILE);
+
+        // 5- gecici dosyayi asil dosyaya kopyala
+
+        try {
+            FileUtils.copyFile(geciciDosya,webElementSS);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 }
